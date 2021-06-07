@@ -1,0 +1,411 @@
+*{
+margin: 0px;
+border: 0px;
+padding: 0px;
+box-sizing: 0px;
+}
+.img_carrusel {
+
+  margin: auto;
+  margin-top: 70px;
+  padding: 20px;
+  box-sizing:  border-box;
+  width: 300px;
+
+}
+
+#footer{
+  background: #2e2e2e;
+  width: 100%;
+  height: auto;
+}
+.titulo-footer{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+#footer_contacto{
+  background: #2e2e2e;
+  width: 100%;
+  height: auto;
+
+}
+
+.span-subtitulo{
+  color: rgb(244,246,85);
+  font-size: 500;
+}
+
+.contacto{
+  color: #fff;
+  font-size: 20px;
+  margin-top: 35px;
+  font-weight: 700;
+}
+
+.titulo-contacto{
+  color: #fff;
+}
+
+.correo-contacto{
+  color: #fff;
+}
+
+.Ubicacion{
+  color: #fff;
+  font-size: 20px;
+  margin-top: 35px;
+  font-weight: 700;
+}
+#localizacion{
+  color:white;
+  font-size: 25px;
+}
+
+
+.titulo-localizacion{
+  color: #fff;
+}
+
+.ubicacion{
+  color: #fff;
+  font-size: 20px;
+  margin-top: 35px;
+  font-weight: 800;
+}
+
+.fpersona_card{
+  margin-left: 30px ;
+  margin-right: 30px;
+  margin-top:30px ;
+}
+.cletas_card{
+  margin-top: 30px;
+}
+.cletas_card>div{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.noticias_card{
+  margin-top: 30px;
+}
+.noticias_card>div{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+
+}
+.ciclista_card{
+  margin-top: 30px;
+}
+
+.ciclista_card>div{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.mariana_card{
+  margin-top: 30px;
+}
+.mariana_card>div{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.bosh_card{
+  margin-top: 30px;
+}
+.bosh_card>div{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;  
+}
+
+.quien_card{
+  margin-top: 30px;
+}
+
+
+.fondo_Footer{
+  color:rgb(0, 0, 0);
+  caret-color: rgb(0, 0, 0) ;
+  background-color:rgb(189, 188, 188)
+  
+}
+
+body {
+  background-color:midnightblue;
+}
+
+    .forum-Registro{
+    margin: auto;
+    margin-top: 70px;
+    padding: 20px;
+    box-sizing:  border-box;
+    width: 300px;
+  
+  }
+
+
+
+
+  
+  #footer{
+    background: #2e2e2e;
+    width: 100%;
+    height: auto;
+  }
+  .titulo-footer{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+  
+  .span-subtitulo{
+    color: rgb(244,246,85);
+    font-size: 500;
+  }
+  
+  .contacto{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: 700;
+  }
+  
+  .titulo-contacto{
+    color: #fff;
+  }
+  
+  .correo-contacto{
+    color: #fff;
+  }
+  
+  .Ubicacion{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: 700;
+  }
+  #localizacion{
+    color:white;
+    font-size: 25px;
+  }
+  
+  
+  .titulo-localizacion{
+    color: #fff;
+  }
+  
+  .ubicacion{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: 800;
+  }
+  
+  .cletas_card{
+    margin-top: 30px;
+  }
+  .cletas_card>div{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  
+  .noticias_card{
+    margin-top: 30px;
+  }
+  .noticias_card>div{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  
+  }
+  .ciclista_card{
+    margin-top: 30px;
+  }
+  
+  .ciclista_card>div{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  
+  .mariana_card{
+    margin-top: 30px;
+  }
+  .mariana_card>div{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  .bosh_card{
+    margin-top: 30px;
+  }
+  .bosh_card>div{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;  
+  }
+  
+  .quien_card{
+    margin-top: 30px;
+  }
+  
+  
+  .fondo_Footer{
+    color:rgb(0, 0, 0);
+    caret-color: rgb(0, 0, 0) ;
+    background-color:rgb(189, 188, 188)
+    
+  }
+  
+  body {
+    background-color:midnightblue;
+  }
+
+  
+      .forum-Registro{
+      margin: auto;
+      margin-top: 100px;
+      padding: 30px;
+      box-sizing:  border-box;
+      width: 400px;
+      background: #24303c;
+      border-radius: 4px;
+      font-family: 'calibri';
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+  }
+  
+  .forum-Registro h4 {
+      font-size: 22px;
+      margin-bottom: 20px;
+  }
+  
+   .Control {
+  
+       width: 100%;
+       padding: 10px;
+       border-radius: 4px;
+       background: #24303c; 
+       margin-bottom: 16px;
+       border: 1px solid #1f53c5;
+       font-family: 'calibri';
+       font-size: 18px;
+   }
+  
+   .forum-Registro p {
+       height: 40px;
+       text-align: center;
+       font-size: 18px;
+       line-height: 40px;
+      }
+  
+   .forum-Registro a {
+       color: white;
+   text-decoration: none;
+      }
+  
+      .forum-Registro a:hover {
+          color: white;
+      text-decoration: underline;
+         }
+      
+  .forum-Registro .Boton{
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  }
+  
+  /*  Estos estilos son de la pagina Iniciar sesion  */
+  
+  .form-login {
+      width: 400px;
+      height: 340px;
+      background: #4e4d4d;
+      margin: auto;
+      margin-top: 180px;
+      box-shadow: 7px 13px 37px #000;
+      padding: 20px 30px;
+      border-top: 4px solid #017bab;
+      color: white;
+    }
+    
+    .form-login h5 {
+      margin: 0;
+      text-align: center;
+      height: 40px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid;
+      font-size: 20px;
+    }
+    
+    .controls {
+      width: 100%;
+      border: 1px solid #017bab;
+      margin-bottom: 15px;
+      padding: 11px 10px;
+      background: #252323;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    .buttons {
+      width: 100%;
+      height: 40px;
+      background: #017bab;
+      border: none;
+      color: white;
+      margin-bottom: 16px;
+    }
+    
+    .form-login p{
+      height: 40px;
+      text-align: center;
+      border-bottom: 1px solid;
+    }
+    
+    .form-login a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    
+    .form-login a:hover {
+      text-decoration: underline;
+    }
+  
+  .disciplinas_card {
+    margin-top: 30px;
+  }
+
+  .disciplinas_card>div {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+  }
+
+  .dj_figure{
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+  .text_page{
+    margin-left: 40px;
+    margin-bottom: 30px;
+  }
+
+  .card bg-dark {
+    margin-bottom: 30px;
+  }
