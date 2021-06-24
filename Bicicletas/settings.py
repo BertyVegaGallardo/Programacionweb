@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',
     'core',
     'crispy_forms',
+    'rest_bicicletas',
+    
 
 ]
 
@@ -53,12 +57,22 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+REST_FRAMEWORK = {
+
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+
+        'rest_framework.authentication.TokenAuthentication',
+
+    ]
+
+}
+
 ROOT_URLCONF = 'Bicicletas.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'..\core\templates'],
+        'DIRS': [r'D:\2 año Ingenieria en informatica\Programacion web\Programacionweb\core\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
