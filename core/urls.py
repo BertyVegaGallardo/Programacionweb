@@ -5,7 +5,7 @@ from .views import Noticias
 from .views import QuienesSomos
 from .views import contacto
 from .views import Registrarse
-from .views import Iniciarsesion
+
 from .views import dj
 from .views import xc
 from .views import ruta
@@ -19,6 +19,7 @@ from .views import form_mod_pers
 from .views import form_del_pers
 from .views import Test
 from .views import Test2
+from .views import login
 
 
 urlpatterns = [    
@@ -37,11 +38,13 @@ urlpatterns = [
     path('Mariana',Mariana,name="Mariana"),
     path('bosh',bosh,name="bosh"),
     path('ciclista',ciclista,name="ciclista"),
-    path('Iniciarsesion',Iniciarsesion,name="Iniciarsesion"),
     path('FormularioPersona',FormularioPersona,name="FormularioPersona"),
     path('form_mod_pers/<id>',form_mod_pers,name="form_mod_pers"),
     path('form_del_pers/<id>',form_del_pers,name="form_del_pers"),
     path('Test2', Test2, name="Test2"),
+    path('login',login, name="login"),
+
+
 
 
 ]

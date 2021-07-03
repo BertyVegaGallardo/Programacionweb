@@ -15,12 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.authtoken import views
+from rest_bicicletas.views import Login ,Logout
+
 from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('core.urls')),
-    path('api/', include('rest_bicicletas.urls')),
+    path('',include('core.urls')),
+    path('api/',include(('rest_bicicletas.urls','Bicicletas'))),
+    path('api_generate_token/', views.obtain_auth_token),
+    path('login/',Login.as_view(),name='login'),
+    path('logout/', Logout.as_view()),
+
 ]
 if settings.DEBUG: 
     from django.conf.urls.static import static 

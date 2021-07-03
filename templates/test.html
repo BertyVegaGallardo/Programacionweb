@@ -1,21 +1,19 @@
-<!DOCTYPE html> {% load static %}
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Formulario Login</title>
-    <link rel="stylesheet" href="css/mystyle.css?e">
-   
+{% load static %}
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title> Inicio</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
 
     <link rel='stylesheet' type='text/css' media='screen' href="{% static 'core/css/mystyle.css '%}">
 </head>
-  <body>
-    <div class="row text-center  text-white">
-      <h1>Riders Chile </h1>
-  </div>  
-      
-  <header>
+
+<header>
  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -36,40 +34,59 @@
               <li class="nav"> 
                 <a class=" nav-link" href= "{% url 'QuienesSomos' %}">Quiénes Somos </a>
               <li class="nav-item"> 
-                
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'FormularioPersona' %}">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'FormularioPersona' %}">Formulario Persona</a>
                 </li>                    
             <a class=" nav-link" href= "{% url 'Registrarse' %}">Registrar </a>     
             <li class="nav-item"> 
             
-              <div style="float: right;">
-              <a class=" nav-link" href= "{% url 'Iniciarsesion' %}">Iniciar sesión </a>     
-              </div>
+           
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'test' %}">Crud Persona</a>
               </li> 
-            
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login</a>
+              </li> 
       </header>
-
-
-
+<body>
   
-  <section class="form-login">
-    <body class="inicio_Sesion"></body>
-      <h5>Inicio de Sesión </h5>
-      <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-      <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
-      <input class="buttons" type="submit" name="" value="Ingresar">
-      <p><a href="#">¿Olvidaste tu Contraseña?</a></p>
+<div class="container text-white">
+    <h1>Información Blogueros</h1>
+    <table border="1" class="table text-white">
+        <tr>
+            <td>Rut</td>
+            <td>Nombre</td>
+            <td>Apellido Paterno</td>
+            <td>Apellido Materno</td>
+            <td>Edad</td>
+            <td>Sexo</td>
+            <td>Modificar</td>
+            <td>Eliminar</td>
+        </tr>
+        {% for dato in Formulario_Persona %}
+        <tr class="text-white">
+            <td>{{dato.rut}}</td>
+            <td>{{dato.nombre}}</td>
+            <td>{{dato.Apellido_paterno}}</td>
+            <td>{{dato.Apellido_materno}}</td>
+            <td>{{dato.edad}}</td>
+            <td>{{dato.sexo}}</td>
+            <td><a href="{% url 'form_mod_pers' dato.rut %}">Modificar</a></td>
+            <td><a href="{% url 'form_del_pers' dato.rut %}">Eliminar</a></td>
+        </tr>
 
-    </section>
-    <footer >
-      <div class="text-white">
-        <a href="{% url 'index' %}">volver atras  </a>
-      </div>
+        {% endfor %}
 
-    </footer>
-  </body>
-  
-</html>
+    </table>
+    <a href="{% url 'FormularioPersona'%}">nueva persona</a>
+  </div>
+  <script src="{% static 'core/js/main.js'%}"></script>
+  <script src="{% static 'core/js/query-3.6.0.min.js'%}"></script>
+ 
+  <script
+   
+  ></script>
+                    

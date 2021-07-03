@@ -5,47 +5,49 @@ from .forms import PersonaForm, RegistrarseForm
 # Create your views here.
 
 def index(request):
-    return render(request,'core/index.html')
+    return render(request,'index.html')
 
 def disciplina(request):
-    return render(request, 'core/disciplina.html')
+    return render(request, 'disciplina.html')
 
 def Noticias(request):
-    return render(request, 'core/Noticias.html')
+    return render(request, 'Noticias.html')
 
 def QuienesSomos(request):
-    return render(request, 'core/QuienesSomos.html')
+    return render(request, 'QuienesSomos.html')
 
 def contacto(request):
-    return render(request, 'core/contacto.html')
+    return render(request, 'contacto.html')
 
-
-def Iniciarsesion(request):
-    return render(request, 'core/Iniciarsesion.html')
 
 def dj(request):
-    return render(request, 'core/dj.html')
+    return render(request, 'dj.html')
 
 def xc(request):
-    return render(request, 'core/xc.html')
+    return render(request, 'xc.html')
 
 def ruta(request):
-    return render(request, 'core/ruta.html')
+    return render(request, 'ruta.html')
 
 def bmx(request):
-    return render(request, 'core/bmx.html')
+    return render(request, 'bmx.html')
 
 def dh(request):
-    return render(request, 'core/dh.html')
+    return render(request, 'dh.html')
 
 def Mariana(request):
-    return render(request, 'core/Mariana.html')
+    return render(request, 'Mariana.html')
 
 def bosh(request):
-    return render(request, 'core/bosh.html')
+    return render(request, 'bosh.html')
 
 def ciclista(request):
-    return render(request, 'core/ciclista.html')
+    return render(request, 'ciclista.html')
+
+def login (request):
+    return render(request, 'login.html')
+
+
 
 def Test(request):
     
@@ -55,7 +57,7 @@ def Test(request):
         'Formulario_Persona':Persona
     }
 
-    return render(request,'core/test.html',datos)
+    return render(request,'test.html',datos)
 
 def FormularioPersona(request):
     data = {
@@ -71,7 +73,7 @@ def FormularioPersona(request):
             data["form"]=formulario
 
 
-    return render(request, 'core/FormularioPersona.html', data)
+    return render(request, 'FormularioPersona.html', data)
 
 def form_mod_pers(request, id):
     Persona = Formulario_Persona.objects.get(rut=id)
@@ -105,7 +107,7 @@ def Test2(request):
         'Registro':registra
     }
 
-    return render(request,'core/test2.html',datos)
+    return render(request,'test2.html',datos)
 
 def Registrarse(request):
     data = {
@@ -121,4 +123,4 @@ def Registrarse(request):
             data["form"]=formulario  
 
 
-    return render(request, 'core/Registrarse.html', data)
+    return render(request, 'Registrarse.html', data)

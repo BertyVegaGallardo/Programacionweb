@@ -342,6 +342,9 @@ body {
       color: white;
     }
     
+
+
+
     .form-login h5 {
       margin: 0;
       text-align: center;
@@ -376,6 +379,7 @@ body {
       border-bottom: 1px solid;
     }
     
+    
     .form-login a {
       color: white;
       text-decoration: none;
@@ -409,3 +413,6 @@ body {
   .card bg-dark {
     margin-bottom: 30px;
   }
+
+
+  

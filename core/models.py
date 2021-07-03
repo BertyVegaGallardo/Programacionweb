@@ -18,6 +18,7 @@ class Formulario_Persona(models.Model):
 
     def __str__(self):
         return self.rut
+
 class Registro(models.Model):
     Nombre = models.CharField(max_length=50, verbose_name='nombre')
     apellidos = models.CharField(max_length=70, verbose_name='apellidos')
